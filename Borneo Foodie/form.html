@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="C:\Borneo Foodie\form.css">
+ </head>
+<body>
+<form>
+Rating (1-5): <input type = "text" name = "rate" id = "rate" />
+<br>
+Comments : <input type = "text" name = "comments" id = "comments" />
+<br>
+<input type = "button" name = "submit" value = "Submit"
+onclick="feedback()"/>
+<br>
+</form>
+ </div>
+ <script>
+  function feedback(){
+  //get values from the form
+  var rate = document.getElementById("rate").value;  
+  var comments = document.getElementById("comments").value; 
+  //display the value on the form
+  document.getElementById("displayrate").innerHTML = rate;
+  document.getElementById("displaycomments").value = comments;
+  } 
+ </script>
+ <div>
+  Rating :<br>
+  <p id="displayrate"></p>
+  Comments : <input type = "text" id="displaycomments" disabled>
+ </div>
+
+
+ </body>
+</html>
